@@ -8,7 +8,7 @@ RUN pip3 install -r requirements.txt
 
 RUN python3 test_boto.py
 
-EXPOSE 15400
+EXPOSE 8080
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "15400"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
 
